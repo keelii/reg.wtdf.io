@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegExp Matcher</title>
+    <link rel="stylesheet" href="//code.bdstatic.com/npm/@wtdf/joshua@0.0.12/dist/joshua.min.css">
+    <link rel="stylesheet" href="/index.css">
+    <style>
+    .btn, .select, .input { margin-bottom: 0; vertical-align: middle; }
+
+    .container, html, body { height: 100%; }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    #topbar {
+        padding: 30px 0;
+    }
+    #regexp span { color: #ccc; }
+    #editor {
+        flex-grow: 1;
+        padding-bottom: 2em;
+    }
+    #content {
+        border: 1px solid #ddd;
+        height: 100%;
+        width: 100%;
+        padding: 1em;
+        font-family: var(--font-mono), monospace;
+        white-space: pre-wrap;
+        -webkit-user-modify: read-write-plaintext-only;
+        user-modify: read-write-plaintext-only;
+        outline: none;
+    }
+    #content mark {
+        background: #1696d2;
+        outline: 1px solid #fff;
+    }
+    </style>
+
+    <link rel="manifest" href="/manifest.json" />
+    <script>
+        // if ('serviceWorker' in navigator) {
+        //     window.addEventListener('load', () => {
+        //         navigator.serviceWorker.register('/sw.js')
+        //             .then((reg) => {
+        //                 console.log('Service worker registered.')
+        //             })
+        //     })
+        // }
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div id="topbar" class="valign">
+            <div id="regexp" style="width: 50%">
+                <span>/</span> <input id="query" type="text" style="width: 90%;" class="input" autocomplete="off" autofocus="autofocus" spellcheck="false" /> <span>/</span>　
+            </div>
+            <div class="form">
+                <span class="custom-input" style="display:none">
+                    <input type="checkbox" id="global" name="g" checked>
+                    <label for="global">Global(g)</label>
+                </span>　
+                <span class="custom-input">
+                    <input type="checkbox" id="ignore-case" name="i" checked>
+                    <label for="ignore-case">Ignore Case(i)</label>
+                </span>　
+                <span class="custom-input" style="display:none">
+                    <input type="checkbox" id="multiline" name="m" checked>
+                    <label for="multiline">Multiline(m)</label>
+                </span>
+            </div>
+            
+        </div>
+        
+        <div id="editor">
+            <pre id="content" contenteditable spellcheck="false">Lorem ipsum dolor, 123 sit 456abc amet consectetur adipisicing elit. Facilis minus est vel doloribus a laboriosam eos hic officia totam, nihil repellat? Sit nihil quibusdam culpa quos atque voluptas laboriosam esse?&nbsp;Lorem ipsum dolor, 123 sit 456abc amet consectetur adipisicing elit. Facilis minus est vel doloribus a laboriosam eos hic officia totam, nihil repellat?
+                Sit nihil quibusdam culpa quos atque voluptas laboriosam esse?</pre>
+        </div>
+    </div>
+
+    <script src="//code.bdstatic.com/npm/prettier@1.18.0/standalone.js"></script>
+    <script src="//code.bdstatic.com/npm/prettier@1.18.0/parser-babylon.js"></script>
+    <script src="//code.bdstatic.com/npm/prettier@1.18.0/parser-markdown.js"></script>
+    <script src="//code.bdstatic.com/npm/prettier@1.18.2/parser-html.js"></script>
+    <script src="//code.bdstatic.com/npm/prettier@1.18.2/parser-postcss.js"></script>
+    <script src="/index.js"></script>
+
+</body>
+</html>
