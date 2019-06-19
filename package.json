@@ -5,7 +5,8 @@
   "scripts": {
     "start": "./node_modules/.bin/parcel watch --out-dir docs src/index.js",
     "build:js": "./node_modules/.bin/parcel build --no-source-maps --out-dir docs src/index.js",
-    "build": "yarn build:js"
+    "clear": "rm docs/*.map",
+    "build": "yarn clear && yarn build:js"
   },
   "devDependencies": {
     "codemirror": "^5.47.0",

@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
         clearTimeout(timer)
         timer = setTimeout(() => {
             performMark()
-            localStorage.setItem('content', text)
+            localStorage.setItem('content', content.innerText)
         }, 10)
     })
     inputs.forEach(input => 
