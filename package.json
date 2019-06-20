@@ -9,7 +9,6 @@
     "build": "yarn clear && yarn build:js"
   },
   "devDependencies": {
-    "codemirror": "^5.47.0",
     "parcel-bundler": "^1.12.3"
   },
   "dependencies": {
