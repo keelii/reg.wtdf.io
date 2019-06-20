@@ -5,7 +5,7 @@ __CACHE_URLS__ = [
     "/index.js",
     "/manifest.json",
     "/favicon.ico",
-    "http://code.bdstatic.com/npm/@wtdf/joshua@0.0.12/dist/joshua.min.css",
+    "https://code.bdstatic.com/npm/@wtdf/joshua@0.0.12/dist/joshua.min.css",
     "https://fonts.loli.net/css?family=PT+Serif:400|PT+Serif:400&display=swap",
     "https://fonts.loli.net/css?family=Source+Serif+Pro:400,600,700&display=swap"
 ]
