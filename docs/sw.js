@@ -33,7 +33,6 @@ self.addEventListener('activate', function(evt) {
 })
 
 self.addEventListener('fetch', function (event) {
-    console.log('[Fetch]', event.request.url)
     event.respondWith(
         caches.match(event.request).then(res => {
             return res ||
