@@ -1,4 +1,4 @@
-__CACHE_VER__ = "fmt.wtdf.io_v1.0.1"
+__CACHE_VER__ = "fmt.wtdf.io_v1.1.1"
 __CACHE_URLS__ = [
     "/",
     "/index.css",
@@ -7,7 +7,8 @@ __CACHE_URLS__ = [
     "/favicon.ico",
     "https://code.bdstatic.com/npm/@wtdf/joshua@0.0.12/dist/joshua.min.css",
     "https://fonts.loli.net/css?family=PT+Serif:400|PT+Serif:400&display=swap",
-    "https://fonts.loli.net/css?family=Source+Serif+Pro:400,600,700&display=swap"
+    "https://fonts.loli.net/css?family=Source+Serif+Pro:400,600,700&display=swap",
+    "https://www.googletagmanager.com/gtag/js?id=UA-79264835-8"
 ]
 
 self.addEventListener('install', function(evt) {
